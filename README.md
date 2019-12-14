@@ -1,26 +1,5 @@
-# 環境構築手順
+# Nuxt + TypeScript ハンズオン
 
-### nodeイメージをビルド
-
-`docker-compose build`
-
-### コンテナ起動
-
-`docker-compose up -d`
-
-### コンテナに入る
-
-`docker-compose exec front /bin/ash`
-
-### Nuxt起動
-
-```
-cd sample-app/
-yarn
-yarn dev
-```
-
-### 下記URLにアクセス
-
-http://localhost:3002/
+- `/nuxt_ts_handson/sample-app` 配下をプロジェクトルートとして開いてください
+- 環境構築手順は`/sample-app/README.md`に記載してあります
 
