@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "fix": "eslint --ext .ts,.js,.vue ."
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.3.2",
@@ -20,6 +20,10 @@
     "@nuxt/typescript-build": "^0.5.1",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/vuetify": "^1.0.0",
-    "eslint": "^6.7.2"
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint": "^6.7.2",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-vue": "^6.0.1"
   }
 }
