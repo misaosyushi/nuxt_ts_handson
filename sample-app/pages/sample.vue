@@ -9,14 +9,14 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
-  asyncData ({ app }) {
+  asyncData({ app }) {
     return { goodMorning: app.context.$contextInjectedFunction('misaosyushi') }
   }
 })
 export default class Sample extends Vue {
   hello: string = ''
 
-  created () {
+  created() {
     this.hello = this.$vueInjectedFunction('misaosyushi')
   }
 }
