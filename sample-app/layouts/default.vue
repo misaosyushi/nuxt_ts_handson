@@ -69,6 +69,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Sample',
           to: '/sample'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'GymLeaderList',
+          to: '/gymLeaderList'
         }
       ],
       miniVariant: false,
