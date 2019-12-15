@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>{{ message }}</h1>
+    <h1>{{ goodMorning }}</h1>
+    <h1>{{ hello }}</h1>
   </div>
 </template>
 
@@ -9,9 +10,14 @@ import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
   asyncData ({ app }) {
-    return { message: app.context.$myInjectedFunction('misaosyushi') }
+    return { goodMorning: app.context.$contextInjectedFunction('misaosyushi') }
   }
 })
 export default class Sample extends Vue {
+  hello: string = ''
+
+  created () {
+    this.hello = this.$vueInjectedFunction('misaosyushi')
+  }
 }
 </script>

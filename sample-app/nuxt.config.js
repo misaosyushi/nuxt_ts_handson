@@ -35,7 +35,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/contextInject.ts'
+    '~/plugins/contextInject.ts',
+    '~/plugins/vueInstanceInject.ts'
   ],
   /*
   ** Nuxt.js dev-modules
