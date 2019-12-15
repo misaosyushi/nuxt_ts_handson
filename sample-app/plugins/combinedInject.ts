@@ -7,7 +7,7 @@ declare module 'vue/types/vue' {
 }
 
 declare module '@nuxt/types' {
-  interface NuxtAppOptions {
+  interface Context {
     $combinedInjectedFunction(name: string): string
   }
 }

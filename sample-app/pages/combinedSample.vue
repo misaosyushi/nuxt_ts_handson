@@ -7,19 +7,19 @@
 </template>
 
 <script lang="ts">
-  import { Vue, Component } from 'vue-property-decorator'
+import { Vue, Component } from 'vue-property-decorator'
 
-  @Component({
-    asyncData ({ app }) {
-      return { contextMessage: app.$combinedInjectedFunction('misaosyushi') }
-    }
-  })
-  export default class Sample extends Vue {
-    vueMessage: string = ''
-
-    created () {
-      this.vueMessage = this.$combinedInjectedFunction('misaosyushi')
-      this.$store.commit('changeValue', 'misaosyushi')
-    }
+@Component({
+  asyncData ({ app }) {
+    return { contextMessage: app.$combinedInjectedFunction('misaosyushi') }
   }
+})
+export default class Sample extends Vue {
+  vueMessage: string = ''
+
+  created () {
+    this.vueMessage = this.$combinedInjectedFunction('misaosyushi')
+    this.$store.commit('changeValue', 'misaosyushi')
+  }
+}
 </script>
