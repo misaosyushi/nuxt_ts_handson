@@ -36,7 +36,8 @@ export default {
   */
   plugins: [
     '~/plugins/contextInject.ts',
-    '~/plugins/vueInstanceInject.ts'
+    '~/plugins/vueInstanceInject.ts',
+    '~/plugins/combinedInject.ts'
   ],
   /*
   ** Nuxt.js dev-modules
