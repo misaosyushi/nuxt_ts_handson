@@ -15,7 +15,6 @@
 ### Nuxt起動
 
 ```
-cd sample-app/
 yarn
 yarn dev
 ```
